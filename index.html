@@ -4,44 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Capstone Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
-            background: #eaf4fb;
-            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
         .card {
-            background: white;
-            width: 380px;
-            padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            width: 420px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 22px;
+            padding: 32px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
             text-align: center;
+            color: #fff;
         }
 
-        h1 {
-            color: #1f4e79;
-            margin-bottom: 10px;
+        .project-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 6px;
         }
 
-        h3 {
-            color: #3a6ea5;
-            margin-bottom: 20px;
-            font-weight: normal;
+        .project-desc {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 18px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
 
         .member {
-            background: #e6f2fb;
-            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.2);
             padding: 12px;
-            border-radius: 10px;
-            color: #1f4e79;
-            font-weight: 500;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
@@ -49,15 +78,23 @@
 <body>
 
     <div class="card">
-        <h1>✨ Capstone Project ✨</h1>
-        <h3>Team Members</h3>
+        <div class="project-title">
+            🚗 AUTOSAR Vehicle Speed Monitoring ECU
+        </div>
+
+        <div class="project-desc">
+            Capstone Project – QR Code Enabled Project Info
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>👥 Team Members</h2>
 
         <div class="member">55926 – Konijeti Yamini</div>
         <div class="member">57152 – Abhishek Suman</div>
         <div class="member">55923 – Gaddam Pavithra</div>
         <div class="member">55903 – Lokesh Prabhu</div>
         <div class="member">55913 – Himaja Sudha</div>
-
     </div>
 
 </body>
